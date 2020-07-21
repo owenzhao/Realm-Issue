@@ -3,17 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5FE75D55146441835B7DB7D7 /* Pods_Realm_Issue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F019D39E2A2E7626E5535C66 /* Pods_Realm_Issue.framework */; };
 		DC6F0DDD24C6D32E0075DE55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F0DDC24C6D32E0075DE55 /* AppDelegate.swift */; };
 		DC6F0DDF24C6D32E0075DE55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F0DDE24C6D32E0075DE55 /* ViewController.swift */; };
 		DC6F0DE124C6D3300075DE55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC6F0DE024C6D3300075DE55 /* Assets.xcassets */; };
 		DC6F0DE424C6D3300075DE55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6F0DE224C6D3300075DE55 /* Main.storyboard */; };
+		DC6F0DED24C6D5CE0075DE55 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F0DEC24C6D5CE0075DE55 /* Models.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28D816D9E172E7E6759B56B1 /* Pods-Realm Issue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Realm Issue.debug.xcconfig"; path = "Target Support Files/Pods-Realm Issue/Pods-Realm Issue.debug.xcconfig"; sourceTree = "<group>"; };
 		DC6F0DD924C6D32E0075DE55 /* Realm Issue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Realm Issue.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC6F0DDC24C6D32E0075DE55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC6F0DDE24C6D32E0075DE55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -21,6 +24,9 @@
 		DC6F0DE324C6D3300075DE55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC6F0DE524C6D3300075DE55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC6F0DE624C6D3300075DE55 /* Realm_Issue.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Realm_Issue.entitlements; sourceTree = "<group>"; };
+		DC6F0DEC24C6D5CE0075DE55 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		F019D39E2A2E7626E5535C66 /* Pods_Realm_Issue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Realm_Issue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2D9EE3AC5ED4E524D3A88DF /* Pods-Realm Issue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Realm Issue.release.xcconfig"; path = "Target Support Files/Pods-Realm Issue/Pods-Realm Issue.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,17 +34,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FE75D55146441835B7DB7D7 /* Pods_Realm_Issue.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B1B79EB0A52E8D783B6E3254 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				28D816D9E172E7E6759B56B1 /* Pods-Realm Issue.debug.xcconfig */,
+				F2D9EE3AC5ED4E524D3A88DF /* Pods-Realm Issue.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BA1E68F2E106D63538E5344D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F019D39E2A2E7626E5535C66 /* Pods_Realm_Issue.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DC6F0DD024C6D32E0075DE55 = {
 			isa = PBXGroup;
 			children = (
 				DC6F0DDB24C6D32E0075DE55 /* Realm Issue */,
 				DC6F0DDA24C6D32E0075DE55 /* Products */,
+				B1B79EB0A52E8D783B6E3254 /* Pods */,
+				BA1E68F2E106D63538E5344D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +81,7 @@
 			children = (
 				DC6F0DDC24C6D32E0075DE55 /* AppDelegate.swift */,
 				DC6F0DDE24C6D32E0075DE55 /* ViewController.swift */,
+				DC6F0DEC24C6D5CE0075DE55 /* Models.swift */,
 				DC6F0DE024C6D3300075DE55 /* Assets.xcassets */,
 				DC6F0DE224C6D3300075DE55 /* Main.storyboard */,
 				DC6F0DE524C6D3300075DE55 /* Info.plist */,
@@ -70,9 +97,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC6F0DE924C6D3300075DE55 /* Build configuration list for PBXNativeTarget "Realm Issue" */;
 			buildPhases = (
+				6CB8CC5A77B11DA8455BCCDB /* [CP] Check Pods Manifest.lock */,
 				DC6F0DD524C6D32E0075DE55 /* Sources */,
 				DC6F0DD624C6D32E0075DE55 /* Frameworks */,
 				DC6F0DD724C6D32E0075DE55 /* Resources */,
+				23FF0C0FAD1EAFD0030F6795 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,11 +157,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		23FF0C0FAD1EAFD0030F6795 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Realm Issue/Pods-Realm Issue-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Realm Issue/Pods-Realm Issue-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Realm Issue/Pods-Realm Issue-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CB8CC5A77B11DA8455BCCDB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Realm Issue-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DC6F0DD524C6D32E0075DE55 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC6F0DED24C6D5CE0075DE55 /* Models.swift in Sources */,
 				DC6F0DDF24C6D32E0075DE55 /* ViewController.swift in Sources */,
 				DC6F0DDD24C6D32E0075DE55 /* AppDelegate.swift in Sources */,
 			);
@@ -267,6 +339,7 @@
 		};
 		DC6F0DEA24C6D3300075DE55 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28D816D9E172E7E6759B56B1 /* Pods-Realm Issue.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Realm Issue/Realm_Issue.entitlements";
@@ -287,6 +360,7 @@
 		};
 		DC6F0DEB24C6D3300075DE55 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2D9EE3AC5ED4E524D3A88DF /* Pods-Realm Issue.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Realm Issue/Realm_Issue.entitlements";

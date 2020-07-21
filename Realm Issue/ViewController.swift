@@ -7,13 +7,14 @@
 //
 
 import Cocoa
+import RealmSwift
 
 class ViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        run()
     }
 
     override var representedObject: Any? {
@@ -22,6 +23,21 @@ class ViewController: NSViewController {
         }
     }
 
-
+    private func run() {
+//        let url = Bundle.main.url(forResource: "realm", withExtension: "db")!
+//        let realm = try! Realm(fileURL: url)
+        let realm = try! Realm()
+        let id = "test"
+        
+        for i in 1...10 {
+            let foo = Foo()
+            foo.id = id
+            foo.value = i
+            
+            try! realm.write {
+                realm.add(foo, update: .all)
+            }
+        }
+    }
 }
 
